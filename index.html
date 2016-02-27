@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Detección de movimiento</title>
+	<script type="text/javascript" src="resemble.js"></script>
+	<script type="text/javascript" src="camara.js"></script>
+	<style type="text/css">
+		body {
+			background-color: #CCC;
+		}
+		div.pantallas{
+			text-align: center;
+		}
+		.no_display {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="pantallas">
+		<div class="video">
+			<button id="estado">Ocultar</button>
+			<video id="video" autoplay>Esto es una etiqueta video</video>
+		</div>
+
+		<button id="copiar">\/</button>
+
+		<div class="canvas">
+			<canvas id="canvas">Esta es una etiqueta canvas</canvas>
+			<p id="resultado">ESTÁTICO</p>
+		</div>
+	</div>
+	
+	<script type="text/javascript">inicio();</script>
+</body>
+</html>
